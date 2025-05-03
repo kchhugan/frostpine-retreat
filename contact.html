@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Kanishka Chhugani">
+  <meta name="description" content="Contact Frostpine Retreat for serene alpine getaways and personalized assistance.">
+  <title>Frostpine Retreat | Contact</title>
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1><a href="index.html">Frostpine Retreat</a></h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Accommodations</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Full-width banner image -->
+      <section>
+        <img src="images/swiss-sunset.jpg" alt="Peaceful snowy valley with trees" width="1280" height="400">
+      </section>
+
+      <!-- Intro title and paragraph -->
+      <section style="text-align: center; padding: 2rem;">
+        <h2>Get in Touch</h2>
+        <p>We’re here to help you plan the perfect alpine getaway. Reach out with any questions or requests — we’ll get back to you as soon as possible!</p>
+      </section>
+
+      <!-- Contact section with image + form side by side -->
+      <section class="contact-wrap" style="display: flex; justify-content: space-between; align-items: flex-start; gap: 2rem; padding: 2rem 1rem;">
+        <!-- Left image -->
+        <div style="flex: 1;">
+          <img src="images/swiss-peak.jpg" alt="Scenic snowy sunset" width="600" height="400" style="width: 100%; height: auto;">
+        </div>
+
+        <!-- Right form -->
+        <div style="flex: 1;">
+          <form action="https://wp.zybooks.com/form-viewer.php" method="POST" style="display: flex; flex-direction: column; gap: 1rem;">
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" name="full-name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone">
+
+            <label>Preferred Contact Method:</label>
+            <div style="display: flex; gap: 1rem;">
+              <label><input type="radio" name="contact-method" value="email" checked> Email</label>
+              <label><input type="radio" name="contact-method" value="phone"> Phone</label>
+            </div>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Frostpine Retreat. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>
